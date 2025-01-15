@@ -1,0 +1,18 @@
+meta {
+  name: Post Comments
+  type: http
+  seq: 6
+}
+
+get {
+  url: http://127.0.0.1:8000/api/v1/posts/2/comments
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  title: this is post title @contentType(text)
+  content: this is post content @contentType(text)
+  media[0]: @file(/Users/saimain/Downloads/20250110-150656.jpeg)
+  media[1]: @file(/Users/saimain/Downloads/466808814_606386375094878_3627193990714013946_n.jpg)
+}
