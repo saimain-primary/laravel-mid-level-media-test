@@ -1,3 +1,25 @@
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`DB_DATABASE`
+
+`DB_USERNAME`
+
+`DB_PASSWORD`
+
+## Link the Storage
+
+Link the storage path to public for media
+
+`php artisan storage:link`
+
+## Run the Test
+
+To run the Test
+
+`php artisan test`
+
 ## API Reference
 
 #### Get All Posts
